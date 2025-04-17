@@ -3,26 +3,26 @@
 @import "./footer.css";
 
 body {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  margin: 0px;
-  padding: 0;
+  font-family: "National Park", "Arial Narrow", Arial, sans-serif;
+  margin: 0vh;
+  padding: 0vh;
   justify-self: center;
 }
 
 h1,
 h2,
 h3 {
-  margin: 0px;
+  margin: 0vh;
 }
 
 ul {
-  margin: 0px;
-  padding: 0px;
+  margin: 0vh;
+  padding: 0vh;
   list-style: none;
 }
 
 img {
-  max-width: 400px;
+  max-width: 23vw;
   display: block;
   justify-self: center;
 }
@@ -30,13 +30,13 @@ img {
 .introducao {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  max-width: 1700px;
+  max-width: 95vw;
   justify-content: center;
   align-items: center;
 }
 
 .introducao h1 {
-  font-size: 45px;
+  font-size: 5.3vh;
   justify-self: left;
   line-height: 1.2;
   position: relative;
@@ -46,110 +46,113 @@ img {
 .introducao h1::before {
   content: "";
   display: block;
-  width: 120px;
-  height: 100px;
+  width: 6.25vw;
+  height: 10vh;
   background: url(./detalhe.png) no-repeat center;
   position: absolute;
-  top: -15px;
-  left: -60px;
+  top: -1.1vh;
+  left: -3.1vw;
   z-index: -1;
 }
 
 .introducao p {
   line-height: 1.5;
-  font-size: 22px;
+  font-size: 3vh;
 }
 
 .projetos {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  max-width: 1500px;
+  max-width: 95vw;
   justify-self: center;
+  margin: 12vh;
 }
 
-@media (max-width: 1500px) {
+@media (max-width: 78.1vw) {
   .projetos {
-    max-width: 1200px;
+    max-width: 62.5vw;
     flex-direction: column;
   }
 }
 
 .subtitulo {
-  font-size: 100px;
+  font-size: 18vh;
   word-break: break-word;
   text-transform: uppercase;
   line-height: 1;
-  max-width: 255px;
-  letter-spacing: 5px;
-  gap: 50px;
-  margin: 20px;
-  justify-items: center;
+  max-width: 22vw;
+  letter-spacing: 0.26vw;
+  gap: 4.6vh;
+  margin: 1.8vh;
   justify-self: center;
+  align-content: center;
 }
 
 .projetos-texto {
-  font-size: 22px;
-  line-height: 1.33;
+  font-size: 3vh;
+  line-height: 1.6;
+  letter-spacing: 0.01vw;
 }
 
 .projeto-titulo {
-  font-size: 22px;
+  font-size: 3.2vh;
+  letter-spacing: 0.01vw;
 }
 
 .projeto-ano {
-  font-size: 17px;
+  font-size: 2vh;
 }
 
 .projeto {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 20px;
-  margin-bottom: 20px;
+  padding: 1.8vh;
+  margin-bottom: 1.8vh;
   background: #f5f5f5;
   position: relative;
-  gap: 20px;
 }
 
 .projeto::before {
   content: "";
   display: block;
-  width: 8px;
-  height: 20px;
+  width: 0.42vw;
+  height: 4vw;
   background: linear-gradient(#6718fa, #4000b8);
   position: absolute;
-  top: 20px;
-  left: -4px;
+  top: 1.8vh;
+  left: -0.21vw;
 }
 
 .projeto-ano {
   position: absolute;
-  top: 20px;
-  left: -100px;
+  top: 1.8vh;
+  left: -5.2vw;
 }
 
 .projeto_p {
-  font-size: 15px;
-  line-height: 25px;
+  font-size: 2.6vh;
+  line-height: 3vh;
+  letter-spacing: 0.04vw;
 }
 
 .ferramentas {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 0.9vh;
   align-content: start;
 }
 
 .ferramentas li {
-  font-size: 15px;
+  font-size: 2.5vh;
   background: #6718fa;
-  border: 20px;
-  padding: 5px 10px;
-  border-radius: 3px;
+  border: 1vh;
+  padding: 0.46vh 0.9vw;
+  border-radius: 0.28vh;
   color: #f5f5f5;
 }
 
 a {
-  font-size: 18px;
+  font-size: 3vh;
   align-content: center;
   text-decoration: none;
   color: #6718fa;
@@ -161,4 +164,14 @@ a:hover {
 
 .projeto_p {
   grid-column: 1;
+}
+
+.social-icons {
+  display: flex;
+  grid-column: 2;
+  gap: 1rem;
+}
+
+.social-icons img {
+  max-width: 2.3vw;
 }

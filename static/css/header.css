@@ -1,6 +1,6 @@
 .header {
-  max-width: 1600px;
-  padding: 40px 30px;
+  max-width: 83.3vw;
+  padding: 3.7vh 1.56vw;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -10,24 +10,24 @@
 .header-menu {
   display: flex;
   flex-wrap: wrap;
-  gap: 40px;
+  gap: 3.7vh;
 }
 
 .header-menu a {
   text-decoration: none;
   color: #000000;
-  font-size: 30px;
-  padding: 20px 10px;
+  font-size: 2.78vh;
+  padding: 1.85vh 0.52vw;
 }
 
 .header h1 {
   text-transform: uppercase;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 41.6vw) {
   .header {
     flex-direction: column;
-    gap: 18px;
-    padding: 18px;
+    gap: 1.67vh;
+    padding: 1.67vh;
   }
 }

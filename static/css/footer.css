@@ -6,7 +6,7 @@
 .rodape {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin: 40px;
+  margin: 5vh;
   align-items: center;
 }
 
@@ -21,4 +21,10 @@ h3 {
 
 .rodape a {
   text-decoration: none;
+}
+
+.rodape-conteudo {
+  text-align: center;
+  text-decoration: none;
+  gap: 2.7vh;
 }
