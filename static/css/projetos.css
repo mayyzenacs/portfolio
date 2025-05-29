@@ -1,8 +1,7 @@
 #conteudo-projetos {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  justify-self: center;
-  margin: 12vh;
+  margin: 0vh;
 }
 
 @media (max-width: 78.1vw) {
@@ -19,9 +18,10 @@
   line-height: 1;
   max-width: 25vw;
   letter-spacing: 0.26vw;
-
   align-content: center;
-  margin-left: 10vh;
+  margin-left: 25vh;
+  text-align: center;
+  margin-top: 20vh;
 }
 
 .projetos-texto {
@@ -33,6 +33,7 @@
 .projeto-titulo {
   font-size: 3.2vh;
   letter-spacing: 0.01vw;
+  margin: 1.5vh;
 }
 
 .projeto-ano {
@@ -42,12 +43,13 @@
 .projeto {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 1.8vh;
+  padding: 0.5vh;
   margin-bottom: 2vh;
-  background: #f5f5f5;
+  background: #ffffff;
   position: relative;
-  max-width: 82vh;
-  background-color: #d2bff5;
+  max-width: 88vh;
+  background-color: #4e1a83;
+  margin-left: 4vh;
 }
 
 .projeto::before {
@@ -71,32 +73,34 @@
   font-size: 2.6vh;
   line-height: 3vh;
   letter-spacing: 0.04vw;
+  margin: 1.5vh;
 }
 
 .ferramentas {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.9vh;
   align-content: start;
 }
 
 .ferramentas li {
-  font-size: 2.5vh;
+  font-size: 2.2vh;
   background: #6718fa;
-  padding: 0.46vh 0.9vw;
+  padding: 0.34vh 0.9vw;
   border-radius: 2vh;
   color: #f5f5f5;
-  margin-top: 1.5vh;
+  list-style: none;
+  margin: 0.45vh;
 }
 
-a {
+.projeto a {
   font-size: 3vh;
   align-content: center;
   text-decoration: none;
-  color: #6718fa;
+  color: #ffffff;
+  grid-row: 3;
 }
 
-a:hover {
+.projeto a:hover {
   color: #8550e7;
 }
 

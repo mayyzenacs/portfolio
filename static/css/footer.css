@@ -1,30 +1,17 @@
-.rodape-container {
-  background-color: black;
-  display: grid;
-}
-
-.rodape {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin: 5vh;
-  align-items: center;
-}
-
 .rodape-conteudo {
-  align-content: center;
-}
-
-.rodape p,
-h3 {
+  margin: 0vh;
+  padding: 0vh;
+  font-size: 2vh;
   text-align: center;
+  margin-top: 40vh;
 }
 
-.rodape a {
-  text-decoration: none;
+.social-icons {
+  display: flex;
+  margin-top: 0vh;
+  gap: 0.25rem;
 }
 
-.rodape-conteudo {
-  text-align: center;
-  text-decoration: none;
-  gap: 2.7vh;
+.social-icons img {
+  max-width: 2.3vw;
 }

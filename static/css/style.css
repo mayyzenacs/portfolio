@@ -9,7 +9,8 @@ body {
   margin: 0vh;
   padding: 0vh;
   justify-self: center;
-  background-color: rgb(94, 94, 95);
+  background-color: rgb(0, 0, 0);
+  color: #ffff;
 }
 
 .conteudo {
@@ -24,16 +25,12 @@ h3 {
   margin: 0vh;
 }
 
-ul {
-  margin: 0vh;
-  padding: 0vh;
-  list-style: none;
-}
-
-img {
+.conteudo img {
   max-width: 23vw;
   display: block;
   justify-self: center;
+  margin-left: 10vh;
+  margin-top: 10vh;
 }
 
 #conteudo-introducao {
@@ -68,15 +65,4 @@ img {
   line-height: 1.5;
   font-size: 3vh;
   margin-bottom: 0vh;
-}
-
-.social-icons {
-  display: flex;
-  grid-column: 2;
-  gap: 1rem;
-  margin-top: 0vh;
-}
-
-.social-icons img {
-  max-width: 2.3vw;
 }
