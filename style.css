@@ -11,7 +11,7 @@ html {scroll-behavior: smooth;}
 body { background-color: #000000; }
 
 section {
-    scroll-margin-top: 90px; 
+    scroll-margin-top: 27px; 
 }
 
 .nav-bar { border-bottom: 1px solid var(--cor-principal); }
@@ -41,6 +41,7 @@ section {
 }
 
 .icons { color: var(--text-white) }
+
 
 .scroll-down {
     position: absolute; 
@@ -74,7 +75,6 @@ section {
 .card-sobre {
     background-color: #161616;
     border-left: 3px solid var(--cor-principal);
-    
     border-radius: 20px;
     position: relative;
     padding: 30px;
@@ -84,12 +84,22 @@ section {
 .purple-text {color: var(--cor-principal);}
 
 
+
+
 .tech-badge {
     transition: all 0.3s ease;
     cursor: default;
     border: 1px solid transparent;
 }
 .tech-badge:hover { 
+    
+    background-color: var(--cor-principal);
+    box-shadow: 0 5px 15px rgba(113, 26, 195, 0.4);
+    border-color: #9d4edd;
+    color: white
+}
+
+.btn:hover {
     transform: translateY(-5px);
     background-color: var(--cor-principal);
     box-shadow: 0 5px 15px rgba(113, 26, 195, 0.4);
