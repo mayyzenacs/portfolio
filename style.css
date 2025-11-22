@@ -6,16 +6,18 @@
       --text-white: #fff;
     }
 
-html {scroll-behavior: smooth;}
+html, body { scroll-behavior: smooth; }
 
-body { background-color: #000000; }
-
-section {
-    scroll-margin-top: 27px; 
+body {
+    background-color: #000000;
+    max-width: 100%;
+    position: relative;
 }
 
-.nav-bar { border-bottom: 1px solid var(--cor-principal); }
+section {scroll-margin-top: 15px;}
 
+.nav-bar { border-bottom: 1px solid var(--cor-principal); }
+    
 .nav-link { color: var(--text-white) }
 
 .navbar-nav, .nav-link:hover,
@@ -60,14 +62,13 @@ section {
 }
 
 
-
 .sobre-foto {
     max-width: 220px;
     border: 2px solid var(--cor-principal);
     box-shadow: 
-    0 0 20px rgba(138, 43, 226, 0.6), 
-    0 0 40px rgba(138, 43, 226, 0.4), 
-    0 0 60px rgba(138, 43, 226, 0.2);
+    0 0 10px rgba(138, 43, 226, 0.6), 
+    0 0 20px rgba(138, 43, 226, 0.4), 
+    0 0 30px rgba(138, 43, 226, 0.2);
     object-fit: cover;
 }
 
@@ -109,13 +110,7 @@ section {
     cursor: default;
     border: 1px solid transparent;
 }
-.tech-badge:hover { 
-    
-    background-color: var(--cor-principal);
-    box-shadow: 0 5px 15px rgba(113, 26, 195, 0.4);
-    border-color: #9d4edd;
-    color: white
-}
+
 
 .btn:hover {
     transform: translateY(-5px);
@@ -125,5 +120,14 @@ section {
     color: white
 }
 
+.link-proj {
+    text-decoration: none;
+    color: var(--text-white);
+    transition: 0.3s;
+}
 
-
+.link-proj:hover {
+    color: var(--cor-principal);
+    transform: translateY(-10px);
+    transition: 0.3s;
+}
