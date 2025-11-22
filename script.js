@@ -1,0 +1,14 @@
+const obs = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        console.log(entry)
+
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show-element')
+        }
+    });
+});
+
+const hidden = document.querySelectorAll('.hidden-left, .hidden.right')
+hidden.forEach((element) => {
+    obs.observe(element)    
+} )
