@@ -124,10 +124,10 @@ section {scroll-margin-top: 15px;}
     border: 1px solid transparent;
 }
 
-.btn-roxo:active,
-.btn-roxo:hover {
+.btn.btn-roxo:hover,
+.btn.btn-roxo:active {
     transform: translateY(-5px);
-    background-color: var(--cor-principal) !important;
+    background-color: var(--cor-principal);
     box-shadow: 0 5px 15px rgba(113, 26, 195, 0.4);
     border-color: #9d4edd;
     color: white;
