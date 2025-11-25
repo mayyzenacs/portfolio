@@ -6,7 +6,9 @@
       --text-white: #fff;
     }
 
-html, body { scroll-behavior: smooth; }
+html, body { 
+    overflow-x: hidden;
+    scroll-behavior: smooth; }
 
 body {
     background-color: #000000;
@@ -61,21 +63,21 @@ section {scroll-margin-top: 15px;}
     transition: 0.3s;
 }
 
-
 .sobre-foto {
-    max-width: 220px;
+    max-width: 220px; 
+    object-fit: cover !important;
+    
     border: 2px solid var(--cor-principal);
     box-shadow: 
     0 0 10px rgba(138, 43, 226, 0.6), 
     0 0 20px rgba(138, 43, 226, 0.4), 
     0 0 30px rgba(138, 43, 226, 0.2);
-    object-fit: cover;
+    
 }
 
-.text-about {
-    color: var(--cor-principal);
-    padding: 30px;
-}
+
+.text-about {color: var(--cor-principal); padding: 30px;}
+
 
 .card-sobre {
     background-color: #161616;
@@ -102,24 +104,6 @@ section {scroll-margin-top: 15px;}
     transform: translateX(0);
 }
 
-
-.purple-text {color: var(--cor-principal);}
-
-.tech-badge {
-    transition: all 0.3s ease;
-    cursor: default;
-    border: 1px solid transparent;
-}
-
-
-.btn:hover {
-    transform: translateY(-5px);
-    background-color: var(--cor-principal);
-    box-shadow: 0 5px 15px rgba(113, 26, 195, 0.4);
-    border-color: #9d4edd;
-    color: white
-}
-
 .link-proj {
     text-decoration: none;
     color: var(--text-white);
@@ -131,3 +115,22 @@ section {scroll-margin-top: 15px;}
     transform: translateY(-10px);
     transition: 0.3s;
 }
+
+.purple-text {color: var(--cor-principal);}
+
+.tech-badge {
+    transition: all 0.3s ease;
+    cursor: default;
+    border: 1px solid transparent;
+}
+
+.btn-roxo:active,
+.btn-roxo:hover {
+    transform: translateY(-5px);
+    background-color: var(--cor-principal) !important;
+    box-shadow: 0 5px 15px rgba(113, 26, 195, 0.4);
+    border-color: #9d4edd;
+    color: white;
+}
+
+
