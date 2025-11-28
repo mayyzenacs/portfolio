@@ -12,7 +12,6 @@ export function animatedAbout() {
             }
         });
     });
+    const hidden = document.querySelectorAll('.hidden-left, .hidden-right')
+    hidden.forEach((element) => obs.observe(element))
 }
-
-const hidden = document.querySelectorAll('.hidden-left, .hidden-right')
-hidden.forEach((element) => obs.observe(element))
