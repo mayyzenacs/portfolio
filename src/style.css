@@ -17,10 +17,9 @@ body {
     background-color: #000000;
     max-width: 100%;
     position: relative;
-    
 }
 
-section {scroll-margin-top: 15px;}
+section {scroll-margin-top: 18px;}
 
 .nav-bar { border-bottom: 1px solid var(--cor-principal); }
     
@@ -80,7 +79,7 @@ section {scroll-margin-top: 15px;}
 }
 
 
-.text-about {color: var(--cor-principal); padding: 30px;}
+.text-about {color: var(--cor-principal);}
 
 
 .card-sobre {
@@ -108,6 +107,12 @@ section {scroll-margin-top: 15px;}
     transform: translateX(0);
 }
 
+.project-img {
+    max-width: 460px; 
+    width: 100%;     
+    height: auto;   
+}
+
 .link-proj {
     text-decoration: none;
     color: var(--text-white);
@@ -121,6 +126,7 @@ section {scroll-margin-top: 15px;}
 }
 
 .purple-text {color: var(--cor-principal);}
+
 
 .tech-badge {
     transition: all 0.3s ease;
@@ -141,11 +147,6 @@ p {
     font-size: 18px;
 }
 
-.project-img {
-    max-width: 460px; 
-    width: 100%;     
-    height: auto;   
-}
 
 
 
