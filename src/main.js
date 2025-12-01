@@ -4,5 +4,14 @@ import'devicon/devicon.min.css'
 import './style.css'
 import * as bootstrap from 'bootstrap'
 
+
+
+
 import { animatedAbout } from './scrip'
 animatedAbout()
+
+
+
+
+
+

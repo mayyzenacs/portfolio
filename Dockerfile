@@ -5,13 +5,14 @@ WORKDIR /app
 
 COPY package.json package-lock.json ./
 
-RUN npm install
+# para não quebrar os packages, se limita a seguir as versões solicitadas.
+RUN npm ci
 
 COPY . .
 
 RUN npm run build
 
-FROM nginx:alpine
+FROM nginx:1.29-alpine
 
 RUN rm /etc/nginx/conf.d/default.conf
 
