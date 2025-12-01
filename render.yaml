@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: my-portfolio
+    name: portfolio-mayra
     env: docker
     region: oregon
     plan: free
