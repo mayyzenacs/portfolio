@@ -11,20 +11,19 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Exo+2&display=swap" rel="stylesheet">
 
-
 </head>
 
 
-<body data-bs-spy="scroll" data-bs-target="#navbarNav" tabindex="0">
-  <nav class="fixed-top navbar navbar-expand-lg bg-black nav-bar">
+<body class="bg-black">
+  <nav class="fixed-top navbar navbar-expand-lg bg-black nav-bar" id="navbar-spy">
     <div class="container">
-      <a class="navbar-brand fw-bold text-white" href="#home">mayra </a>
+      <a class="navbar-brand fw-bold text-white" href="#">mayra </a>
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu-conteudo">
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="collapse navbar-collapse" id="navbarNav">
+      <div class="collapse navbar-collapse">
         <ul class="navbar-nav ms-auto text-center fs-5">
           <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
@@ -60,13 +59,13 @@
 
   </section>
 
-  <section id="sobre" class="py-5 my-5">
+  <section id="sobre" class="py-5">
     <div class="container">
       <h2 class="mb-3 mb-md-5 fw-bold fs-1 text-center purple-text">Sobre mim</h2>
 
       <div class="row align-items-center gx-5">
         <div class="col-10 col-md-auto mx-auto mx-md-0 text-center mb-4 mb-md-0 hidden-left">
-          <img src="/about_img.png" alt="Minha Foto" class="rounded-circle sobre-foto shadow-lg" style="width: 220px; height: 220px; object-fit: cover;">
+          <img src="/about_img.png" alt="Minha Foto" class="rounded-circle sobre-foto shadow-lg">
         </div>
 
         <div class="col hidden-right">
@@ -92,12 +91,12 @@
   </section>
 
 
-  <section id="projetos" class="py-5 my-5">
+  <section id="projetos" class="py-5">
     <div class="container">
       <h2 class="mb-3 mb-md-5 fw-bold text-center fs-1 purple-text">Projetos</h2>
 
       <div class="row align-items-center project-item mb-5 pb-5 border-bottom border-secondary">
-        <div class="col-md-5 text-center">
+        <div class="col-md-6 text-center">
           <img src="/calcopy.png" alt="" class="rounded-3 img-fluid project-img">
         </div>
 
@@ -131,7 +130,7 @@
           <a href="https://github.com/mayyzenacs/CalcoPy_MarketCalc" target="_blank" class="link-proj">
             <h5 class="mb-3 fs-1 link-proj">Portfólio Profissional</h5>
           </a>
-          <p class="mb-4 text-white">Portfolio de programação, frontend desenvolvido com Javascript, HTML/CSS. Implementação de containerização com Docker e configuração de servidor com Ngnix</p>
+          <p class="mb-4 text-white">Portfolio de programação, frontend desenvolvido com Javascript, HTML/CSS. Implementação de containerização com Docker e configuração de servidor com Ngnix.</p>
           <div class="d-flex flex-wrap gap-3 mb-4">
             <span class="badge 
             text-white p-2 tech-badge d-inline-flex align align-items-center"><i class="devicon-bootstrap-plain fs-3 me-2"></i> Bootstrap</span>
@@ -151,7 +150,7 @@
     </div>
   </section>
 
-  <section id="experiencia" class="py-5 my-5">
+  <section id="experiencia" class="py-5">
     <div class="container">
       <h2 class="mb-5 text-center fs-1 fw-bold purple-text">Experiência</h2>
       <div class="row justify-content-center">
@@ -163,7 +162,7 @@
           </div>
           <div class="border-start border-3 ps-4 py-2 mt-5">
             <h4 class="purple-text">Assistente Administrativo</h4>
-            <span class="text-secondary">Ismafer Ferramentas • Dez/2025 - Jul/2025</span>
+            <span class="text-secondary">Ismafer Ferramentas • Dez/2023 - Jul/2025</span>
             <p class="text-white">Realizei a gestão de contas, produtos e anúncios em Marketplaces, análise de dados utilizando PowerBi. Experiência em gestão de equipe e gerenciamento de mais de 400 SKUs.</p>
           </div>
         </div>

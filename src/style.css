@@ -1,36 +1,38 @@
  :root {
-      --cor-principal: #6412b1; 
-      --cor-principal-hover: #410972; 
-      --bg-fundo: #0f0f0f; 
+      --cor-principal: #701cbe; 
+      --cor-principal-hover: #56148f; 
       --bg-card: #1a1a1a;
       --text-white: #fff;
       --bs-body-font-family: 'Exo 2', sans-serif;
      
  }
 
+ .nav-bar { border-bottom: 1px solid var(--cor-principal);}
+     
+ .nav-link { 
+     color: var(--text-white); }
+ 
+ .navbar-nav .nav-link.active {
+     color: var(--cor-principal); 
+     font-weight: bold;
+ }
+ 
+ .navbar-nav .nav-link:hover,
+ .navbar-nav .nav-link:focus {
+     color: var(--cor-principal-hover); 
+ }
+
 html, body { 
-    
-    overflow-x: hidden;
     scroll-behavior: smooth; }
 
 body {
-    background-color: #000000;
-    max-width: 100%;
     position: relative;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
-section {scroll-margin-top: 18px;}
+section {scroll-margin-top: 100px;}
 
-.nav-bar { border-bottom: 1px solid var(--cor-principal); }
-    
-.nav-link { color: var(--text-white) }
-
-.navbar-nav, .nav-link:hover,
-.navbar-nav .nav-link:focus,
-.navbar-nav .nav-link.active {
-    color: var(--cor-principal); 
-    background-color: transparent;
-}
 
 .last-name { color: var(--cor-principal); }
 
@@ -68,7 +70,7 @@ section {scroll-margin-top: 18px;}
 
 .sobre-foto {
     max-width: 220px; 
-    object-fit: cover !important;
+    object-fit: cover;
     
     border: 2px solid var(--cor-principal);
     box-shadow: 
