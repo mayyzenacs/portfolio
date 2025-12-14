@@ -1,9 +1,0 @@
-services:
-  - type: web
-    name: portfolio-mayra
-    env: docker
-    region: oregon
-    plan: free
-    branch: master
-    dockerContext: .
-    dockerfilePath: ./Dockerfile
