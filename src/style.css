@@ -6,6 +6,11 @@
   --bs-body-font-family: "Exo 2", sans-serif;
 }
 
+#home {
+  min-height: 100svh;
+  display: flex;
+}
+
 .nav-bar {
   border-bottom: 1px solid var(--cor-principal);
 }

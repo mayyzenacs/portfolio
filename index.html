@@ -14,178 +14,182 @@
 
 </head>
 
+<seciton id="#home">
 
-<body class="bg-black">
-  <nav class="fixed-top navbar navbar-expand-lg bg-black nav-bar" id="navbar-spy">
-    <div class="container">
-      <a class="navbar-brand" href=" #"><img src="/navbar_icon.webp" width="100" height="24"> </a>
+  <body class="bg-black">
+    <nav class="fixed-top navbar navbar-expand-lg bg-black nav-bar" id="navbar-spy">
+      <div class="container">
+        <a class="navbar-brand" href="#"><img src="/navbar_icon.webp" width="100" height="24"> </a>
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarnav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarnav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-      <div class="collapse navbar-collapse" id="navbarnav">
-        <ul class="navbar-nav ms-auto text-center fs-5">
-          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
-          <li class="nav-item"><a class="nav-link" href="#projetos">Projetos</a></li>
-          <li class="nav-item"><a class="nav-link" href="#experiencia">Experiência</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <section id="home" class="home-section d-flex flex-column justify-content-center align-items-center text-center">
-
-    <div class="container">
-
-      <img src="/foto.webp" alt="foto-principal" class="rounded-circle mb-2 profile-img">
-
-      <h1 class="display-4 fw-bold text-white">Mayra <span class="last-name">Pereira</span></h1>
-      <h2 class="h5 mb-2 fw-bold text-white">Desenvolvedora FullStack</h2>
-      <div class="fs-2 mb-5">
-        <a href="https://github.com/mayyzenacs" target="_blank" class="me-3 hover-effect icons"><i class="bi bi-github"></i></a>
-        <a href="https://www.linkedin.com/in/mayra-pereira-dev/" target="_blank" class=" hover-effect icons"><i class="bi bi-linkedin"></i></a>
-      </div>
-
-    </div>
-
-    <div class="position-absolute bottom-0 start-50 translate-middle-x text-center mb-3">
-      <p class="mb-0 text-white small" style="letter-spacing: 1px;">Clique aqui</p>
-      <a href="#sobre" class="text-white fs-1 scroll-down">
-        <i class="bi bi-chevron-double-down"></i>
-      </a>
-    </div>
-
-  </section>
-
-  <section id="sobre" class="py-5">
-    <div class="container">
-      <h2 class="mb-5 fw-bold fs-1 text-center purple-text">Sobre mim</h2>
-
-      <div class="row align-items-center gx-5">
-        <div class="col-10 col-md-auto mx-auto mx-md-0 text-center mb-4 mb-md-0 hidden-left">
-          <img src="/about_img.webp" alt="foto-2-sobre" class="rounded-circle sobre-foto shadow-lg">
-        </div>
-
-        <div class="col hidden-right">
-          <div class="card-sobre p-4 p-md-5 h-100">
-            <h1 class="fs-5 fw-bold mb-3 text-white">Engenheira de Software em formação • Backend focus</h1>
-            <p class="text-white justify"> Desenvolvo com foco em eficiência e otimização. Experiência na criação de soluções com Python e ecossistema Javascript (Node.js/Vite), uso de Docker para ambientes de desenvolvimento padronizados e portáveis. Entusiasta do conhecimento e de jogos de tabuleiro. Adoro resolver problemas — afinal, gostar de tecnologia é criar problemas para se solucionar.
-            </p>
-
-            <div class="mt-4 d-flex flex-wrap gap-3 text-secondary fw-bold align-items-center span-text">
-              <span><i class="devicon-python-plain fs-4" style="color:#306998;"></i> Python</span>
-              <span><i class="devicon-javascript-plain colored fs-4"></i> Javascript</span>
-              <span><i class="devicon-postgresql-plain colored fs-4"></i> Postgres</span>
-              <span><i class="devicon-flask-original fs-4" style="color: #fff;"></i> Flask</span>
-              <span><i class="devicon-docker-plain-wordmark colored  fs-4"></i> Docker</span>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-
-  <section id="projetos" class="py-5">
-    <div class="container">
-      <h2 class="mb-5 fw-bold text-center fs-1 purple-text">Projetos</h2>
-
-      <div class="row align-items-center project-item mb-5 pb-5 border-bottom border-secondary">
-        <div class="col-md-6 text-center">
-          <img src="/calcopy.webp" alt="projeto-1-calcopy" loading="lazy" class="rounded-3 img-fluid project-img">
-        </div>
-
-        <div class="col-md-6">
-          <a href="https://github.com/mayyzenacs/CalcoPy_MarketCalc" target="_blank" class="link-proj">
-            <h5 class="mb-3 mt-4 mt-md-0 fs-1 link-proj">Calcopy Marketcalc</h5>
-          </a>
-          <p class="mb-4 text-white justify">Automação focada na estratégia comercial "De-Por" (exemplo: quando vemos um anúncio "De R$ 299,00 Por R$ 199,00" dizendo estar 35% de desconto).
-            A ferramenta realiza o cálculo da porcentagem inversa: você insere o preço final que deseja vender e a porcentagem de desconto. O algoritmo retorna exatamente qual deve ser o Preço Base ("De") que deve inserir no marketplace, que ao aplicar o desconto se torna no valor de venda final ("Por").</p>
-          <div class="d-flex flex-wrap gap-3 mb-4">
-            <span class="text-white p-2 tech-badge d-inline-flex align align-items-center"><i class="devicon-python-plain fs-3 me-2"></i> Python</span>
-            <span class="text-white p-2 tech-badge d-inline-flex align align-items-center"><i class="devicon-pandas-plain fs-3 me-2"></i> Pandas</span>
-            <span class="text-white p-2 tech-badge d-inline-flex align align-items-center"><i class="devicon-json-plain fs-3 me-2"></i> Json</span>
-            <span class="text-white p-2 tech-badge d-inline-flex align-items-center">
-              <i class="devicon-python-plain fs-3 me-2"></i> Tkinter
-            </span>
-
-          </div>
+        <div class="collapse navbar-collapse" id="navbarnav">
+          <ul class="navbar-nav ms-auto text-center fs-5">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projetos">Projetos</a></li>
+            <li class="nav-item"><a class="nav-link" href="#experiencia">Experiência</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+          </ul>
         </div>
       </div>
+    </nav>
 
-      <div class="row align-items-center project-item mb-5 pb-5 border-bottom border-secondary flex-md-row-reverse">
-        <div class="col-md-6 text-center">
-          <img src="/projeto-2.webp" alt="projeti-2-portfolio" loading="lazy" class="rounded-3 img-fluid project-img">
-        </div>
+</seciton>
 
-        <div class="col-md-6">
-          <a href="https://github.com/mayyzenacs/portfolio" target="_blank" class="link-proj">
-            <h5 class="mb-3 mt-4 mt-md-0 fs-1 link-proj">Portfólio Pessoal</h5>
-          </a>
-          <p class="mb-4 text-white justify">Site One-Page focado em performance e otimização. Bundling com Vite, containerização via Docker (Multi-Stage Build) e servidor web Nginx. Pipeline de CI/CD automatizado com IaC (Blueprints) no Render.</p>
-          <div class="d-flex flex-wrap gap-3 mb-4">
-            <span class="text-white p-2 tech-badge d-inline-flex align align-items-center"><i class="devicon-bootstrap-plain fs-3 me-2"></i> Bootstrap</span>
-            <span class="text-white p-2 tech-badge d-inline-flex align align-items-center"><i class="devicon-nginx-plain fs-1 me-2"></i> Nginx</span>
-            <span class="text-white p-2 tech-badge d-inline-flex align align-items-center"><i class="devicon-vitejs-plain fs-3 me-2"></i> Vite</span>
-            <span class="text-white p-2 tech-badge d-inline-flex align-items-center">
-              <i class="devicon-docker-plain fs-3 me-2"></i> Docker
-            </span>
+<section id="home" class="home-section d-flex flex-column justify-content-center align-items-center text-center">
 
+  <div class="container">
+
+    <img src="/foto.webp" alt="foto-principal" class="rounded-circle mb-3 profile-img">
+
+    <h1 class="display-4 fw-bold text-white">Mayra <span class="last-name">Pereira</span></h1>
+    <h2 class="h5 mb-2 fw-bold text-white">Desenvolvedora FullStack</h2>
+
+    <div class="fs-2 mb-5">
+      <a href="https://github.com/mayyzenacs" target="_blank" class="me-3 hover-effect icons"><i class="bi bi-github"></i></a>
+      <a href="https://www.linkedin.com/in/mayra-pereira-dev/" target="_blank" class=" hover-effect icons"><i class="bi bi-linkedin"></i></a>
+    </div>
+
+  </div>
+
+  <div class="position-absolute bottom-0 start-50 translate-middle-x text-center mb-3">
+    <p class="mb-0 text-white small" style="letter-spacing: 1px;">Clique aqui</p>
+    <a href="#sobre" class="text-white fs-1 scroll-down">
+      <i class="bi bi-chevron-double-down"></i>
+    </a>
+  </div>
+
+</section>
+
+<section id="sobre" class="py-5">
+  <div class="container">
+    <h2 class="mb-5 fw-bold fs-1 text-center purple-text">Sobre mim</h2>
+
+    <div class="row align-items-center gx-5">
+      <div class="col-10 col-md-auto mx-auto mx-md-0 text-center mb-4 mb-md-0 hidden-left">
+        <img src="/about_img.webp" alt="foto-2-sobre" class="rounded-circle sobre-foto shadow-lg">
+      </div>
+
+      <div class="col hidden-right">
+        <div class="card-sobre p-4 p-md-5 h-100">
+          <h1 class="fs-5 fw-bold mb-3 text-white">Engenheira de Software em formação • Backend focus</h1>
+          <p class="text-white justify"> Desenvolvo com foco em eficiência e otimização. Experiência na criação de soluções com Python e ecossistema Javascript (Node.js/Vite), uso de Docker para ambientes de desenvolvimento padronizados e portáveis. Entusiasta do conhecimento e de jogos de tabuleiro. Adoro resolver problemas — afinal, gostar de tecnologia é criar problemas para se solucionar.
+          </p>
+
+          <div class="mt-4 d-flex flex-wrap gap-3 text-secondary fw-bold align-items-center span-text">
+            <span><i class="devicon-python-plain fs-4" style="color:#306998;"></i> Python</span>
+            <span><i class="devicon-javascript-plain colored fs-4"></i> Javascript</span>
+            <span><i class="devicon-postgresql-plain colored fs-4"></i> Postgres</span>
+            <span><i class="devicon-flask-original fs-4" style="color: #fff;"></i> Flask</span>
+            <span><i class="devicon-docker-plain-wordmark colored  fs-4"></i> Docker</span>
           </div>
         </div>
       </div>
 
     </div>
-  </section>
+  </div>
+</section>
 
-  <section id="experiencia" class="py-5">
-    <div class="container">
-      <h2 class="mb-5 text-center fs-1 fw-bold purple-text">Experiência</h2>
-      <div class="row justify-content-center">
 
-        <div class="col-md-9">
-          <div class="border-start border-3 ps-4 py-2">
-            <h4 class="text-white">Faculdade de Engenharia de Software</h4>
-            <span class="purple-text">Anhanguera 3ºSemestre • Ago/2024 - Jan/2028</span>
-          </div>
-          <div class="border-start border-3 ps-4 py-2 mt-5">
-            <h4 class="text-white">Assistente Administrativo</h4>
-            <span class="purple-text">Ismafer Ferramentas • Dez/2023 - Jul/2025</span>
-            <p class="text-white">Realizei a gestão de contas, produtos e anúncios em Marketplaces, análise de dados utilizando PowerBi. Experiência em gestão de equipe e gerenciamento de mais de 400 SKUs.</p>
-          </div>
+<section id="projetos" class="py-5">
+  <div class="container">
+    <h2 class="mb-5 fw-bold text-center fs-1 purple-text">Projetos</h2>
+
+    <div class="row align-items-center project-item mb-5 pb-5 border-bottom border-secondary">
+      <div class="col-md-6 text-center">
+        <img src="/calcopy.webp" alt="projeto-1-calcopy" loading="lazy" class="rounded-3 img-fluid project-img">
+      </div>
+
+      <div class="col-md-6">
+        <a href="https://github.com/mayyzenacs/CalcoPy_MarketCalc" target="_blank" class="link-proj">
+          <h5 class="mb-3 mt-4 mt-md-0 fs-1 link-proj">Calcopy Marketcalc</h5>
+        </a>
+        <p class="mb-4 text-white justify">Automação focada na estratégia comercial "De-Por" (exemplo: quando vemos um anúncio "De R$ 299,00 Por R$ 199,00" dizendo estar 35% de desconto).
+          A ferramenta realiza o cálculo da porcentagem inversa: você insere o preço final que deseja vender e a porcentagem de desconto. O algoritmo retorna exatamente qual deve ser o Preço Base ("De") que deve inserir no marketplace, que ao aplicar o desconto se torna no valor de venda final ("Por").</p>
+        <div class="d-flex flex-wrap gap-3 mb-4">
+          <span class="text-white p-2 tech-badge d-inline-flex align align-items-center"><i class="devicon-python-plain fs-3 me-2"></i> Python</span>
+          <span class="text-white p-2 tech-badge d-inline-flex align align-items-center"><i class="devicon-pandas-plain fs-3 me-2"></i> Pandas</span>
+          <span class="text-white p-2 tech-badge d-inline-flex align align-items-center"><i class="devicon-json-plain fs-3 me-2"></i> Json</span>
+          <span class="text-white p-2 tech-badge d-inline-flex align-items-center">
+            <i class="devicon-python-plain fs-3 me-2"></i> Tkinter
+          </span>
+
         </div>
       </div>
-  </section>
+    </div>
 
-
-  <section id="contato" class="text-center py-5 mt-4">
-    <div class="container">
-
-      <div class="mb-5">
-        <h2 class="fw-bold mb-3 purple-text">Vamos Conversar?</h2>
-        <p class="lead text-white mb-4">
-          Estou disponível para novos projetos e oportunidades.
-        </p>
-        <a href="https://www.linkedin.com/in/mayra-pereira-dev/" target="_blank" class="btn btn-outline-secondary px-3 py-2 mb-5 rounded-pill btn-roxo">
-          <i></i> Contato</a>
+    <div class="row align-items-center project-item mb-5 pb-5 border-bottom border-secondary flex-md-row-reverse">
+      <div class="col-md-6 text-center">
+        <img src="/projeto-2.webp" alt="projeti-2-portfolio" loading="lazy" class="rounded-3 img-fluid project-img">
       </div>
 
+      <div class="col-md-6">
+        <a href="https://github.com/mayyzenacs/portfolio" target="_blank" class="link-proj">
+          <h5 class="mb-3 mt-4 mt-md-0 fs-1 link-proj">Portfólio Pessoal</h5>
+        </a>
+        <p class="mb-4 text-white justify">Site One-Page focado em performance e otimização. Bundling com Vite, containerização via Docker (Multi-Stage Build) e servidor web Nginx. Deploy na VPS da DigitalOcean + Cloudflare.</p>
+        <div class="d-flex flex-wrap gap-3 mb-4">
+          <span class="text-white p-2 tech-badge d-inline-flex align align-items-center"><i class="devicon-bootstrap-plain fs-3 me-2"></i> Bootstrap</span>
+          <span class="text-white p-2 tech-badge d-inline-flex align align-items-center"><i class="devicon-nginx-plain fs-1 me-2"></i> Nginx</span>
+          <span class="text-white p-2 tech-badge d-inline-flex align align-items-center"><i class="devicon-vitejs-plain fs-3 me-2"></i> Vite</span>
+          <span class="text-white p-2 tech-badge d-inline-flex align-items-center">
+            <i class="devicon-docker-plain fs-3 me-2"></i> Docker
+          </span>
+          <span class="text-white p-2 tech-badge d-inline-flex align-items-center">
+            <i class="devicon-digitalocean-plain fs-3 me-2"></i> DigitalOcean
+          </span>
 
-
-
+        </div>
+      </div>
     </div>
-  </section>
 
-  <footer class="mt-2 text-secondary small rodape text-center border-top border-dark">
-    <p class="m-0">© 2025 Desenvolvido por <span class="text-white fw-bold">Mayra Pereira</span>
-    </p>
-  </footer>
+  </div>
+</section>
 
-  <script type="module" src="./src/main.js"></script>
+<section id="experiencia" class="py-5">
+  <div class="container">
+    <h2 class="mb-5 text-center fs-1 fw-bold purple-text">Experiência</h2>
+    <div class="row justify-content-center">
+
+      <div class="col-md-9">
+        <div class="border-start border-3 ps-4 py-2">
+          <h4 class="text-white">Faculdade de Engenharia de Software</h4>
+          <span class="purple-text">Anhanguera 3ºSemestre • Ago/2024 - Jan/2028</span>
+        </div>
+        <div class="border-start border-3 ps-4 py-2 mt-5">
+          <h4 class="text-white">Assistente Administrativo</h4>
+          <span class="purple-text">Ismafer Ferramentas • Dez/2023 - Jul/2025</span>
+          <p class="text-white">Realizei a gestão de contas, produtos e anúncios em Marketplaces, análise de dados utilizando PowerBi. Experiência em gestão de equipe e gerenciamento de mais de 400 SKUs.</p>
+        </div>
+      </div>
+    </div>
+</section>
+
+
+<section id="contato" class="text-center py-5 mt-5">
+  <div class="container">
+
+    <div class="mb-3">
+      <h2 class="fw-bold mb-3 purple-text">Vamos Conversar?</h2>
+      <p class="lead text-white mb-4">
+        Estou disponível para novos projetos e oportunidades.
+      </p>
+      <a href="https://www.linkedin.com/in/mayra-pereira-dev/" target="_blank" class="btn btn-outline-secondary px-3 py-2 mb-5 rounded-pill btn-roxo">
+        <i></i> Contato</a>
+    </div>
+
+  </div>
+</section>
+
+<footer class="mt-2 text-secondary small rodape text-center border-top border-dark">
+  <p class="m-0">© 2025 Desenvolvido por <span class="text-white fw-bold">Mayra Pereira</span>
+  </p>
+</footer>
+
+<script type="module" src="./src/main.js"></script>
 
 </body>
 
