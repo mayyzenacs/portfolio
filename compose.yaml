@@ -13,6 +13,31 @@ services:
       - /etc/ssl/cert.pem:/etc/ssl/cert.pem:ro
       - /etc/ssl/key.pem:/etc/ssl/key.pem:ro
 
+    security_opt:
+      - no-new-privileges: true
+
+    cap_drop:
+      - ALL
+
+    cap_add:
+      - CHOWN
+      - SETUID
+      - SETGID
+      - NET_BIND_SERVICE
+
+    read_only: true
+
+    tmpfs:
+      - /var/cache/nginx: mode=1777,size=50M
+      - /var/run:mode=1777,size=10M
+
+    healthcheck:
+      test:
+        ["CMD", "wget", "--quiet", "--tries=1", "--spider", "http://localhost/"]
+      interval: 5m
+      timeout: 5s
+      retries: 2
+
     logging:
       driver: json-file
       options:
