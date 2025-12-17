@@ -1,10 +1,9 @@
-FROM node:24-alpine AS builder
+FROM node:20-alpine AS builder
 
 WORKDIR /app
 
 COPY package.json package-lock.json ./
 
-# para não quebrar os packages, se limita a seguir as versões solicitadas.
 RUN npm ci
 
 COPY . .
