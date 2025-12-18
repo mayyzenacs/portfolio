@@ -14,7 +14,7 @@ services:
       - /etc/ssl/key.pem:/etc/ssl/key.pem:ro
 
     security_opt:
-      - no-new-privileges: true
+      - no-new-privileges:true
 
     cap_drop:
       - ALL
@@ -28,7 +28,7 @@ services:
     read_only: true
 
     tmpfs:
-      - /var/cache/nginx: mode=1777,size=50M
+      - /var/cache/nginx:mode=1777,size=50M
       - /var/run:mode=1777,size=10M
 
     healthcheck:
