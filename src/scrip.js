@@ -5,7 +5,6 @@ export function animatedAbout() {
 
       if (entry.isIntersecting) {
         entry.target.classList.add("show-element");
-        // obs.unobserve(entry.target);
       } else {
         entry.target.classList.remove("show-element");
       }
