@@ -14,7 +14,7 @@
 
 Este projeto migra a primeira versão com render e IaC para uma VPS Ubuntu configurada no Droplet da DigitalOcean.
   
-O objetivo dessa migração de infraestrutura é demonstrar habilidades em Engenharia de Software e DevOps. O site one-page é focado em perfomance e segurança com Ngnix configurado detalhadamente com secure headers essenciais. O uso de Docker faz com que a aplicação seja reprodutível e permite a hospedagem eficiente na VPS da DigitalOcean.
+O objetivo dessa migração de infraestrutura é demonstrar habilidades em Engenharia de Software e DevOps. O site one-page é focado em perfomance e segurança com Nginx configurado detalhadamente com secure headers essenciais. O uso de Docker faz com que a aplicação seja reprodutível e permite a hospedagem eficiente na VPS da DigitalOcean.
 
 ## 🛠️ Stack Tecnológico
 
