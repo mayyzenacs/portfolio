@@ -31,6 +31,7 @@ services:
       - /var/cache/nginx:mode=1777,size=10M
       - /var/run:mode=1777,size=512k
       - /tmp:mode=1777
+      - /var/log/nginx:mode=1777
 
     healthcheck:
       test:
