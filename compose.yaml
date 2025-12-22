@@ -13,6 +13,7 @@ services:
       - /etc/ssl/cert.pem:/etc/ssl/cert.pem:ro
       - /etc/ssl/key.pem:/etc/ssl/key.pem:ro
 
+
     security_opt:
       - no-new-privileges:true
 
