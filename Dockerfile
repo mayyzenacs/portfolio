@@ -12,7 +12,11 @@ RUN npm run build
 
 FROM nginx:1.29-alpine
 
+RUN mkdir -p /etc/nginx/snippets
+
 RUN rm /etc/nginx/conf.d/default.conf
+
+COPY snippets/security.conf /etc/nginx/snippets/security.conf
 
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 
