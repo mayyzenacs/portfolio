@@ -70,22 +70,22 @@
 
     <div class="row align-items-center gx-5">
       <div class="col-10 col-md-auto mx-auto mx-md-0 text-center mb-4 mb-md-0 hidden-left">
-        <img src="/about_img.webp" alt="foto-2-sobre" class="rounded-circle sobre-foto shadow-lg">
+        <img src="/about_img.webp" alt="foto-2-sobre" class="rounded-circle about-img shadow-lg">
       </div>
 
       <div class="col hidden-right">
-        <div class="card-sobre p-4 p-md-5 h-100">
+        <div class="card-about p-4 p-md-5 h-100">
           <h1 class="fs-5 fw-bold mb-3 text-white">Engenheira de Software em formação • Backend focus</h1>
-          <p class="text-white justify"> Desenvolvo com foco em eficiência e otimização. Experiência na criação de soluções com Python e ecossistema Javascript (Node.js/Vite), uso de Docker para ambientes de desenvolvimento padronizados e portáveis. Entusiasta do conhecimento e de jogos de tabuleiro.
+          <p class="text-white justify"> Desenvolvedora Backend .NET e Infra. Crio APIs robustas com Docker, Nginx e Postgres. Foco em performance, arquitetura de software e escalabilidade. Entusiasta do conhecimento e de jogos de tabuleiro.
           </p>
 
           <div class="mt-4 d-flex flex-wrap gap-3 text-secondary fw-bold align-items-center span-text">
-            <span><i class="devicon-python-plain fs-4" style="color:#306998;"></i> Python</span>
-            <span><i class="devicon-javascript-plain colored fs-4"></i> Javascript</span>
+            <span><i class="devicon-csharp-plain colored fs-4"></i> C#</span>
+            <span><i class="devicon-dotnetcore-plain colored fs-4"></i> .NET Core</span>
+            <span><i class="devicon-python-plain colored fs-4" style="color:#306998;"></i> Python</span>
             <span><i class="devicon-postgresql-plain colored fs-4"></i> Postgres</span>
-            <span><i class="devicon-nginx-plain-wordmark colored  fs-4"></i> Nginx</span>
-            <span><i class="devicon-flask-original fs-4" style="color: #fff;"></i> Flask</span>
             <span><i class="devicon-docker-plain-wordmark colored  fs-4"></i> Docker</span>
+            <span><i class="devicon-nginx-plain-wordmark colored  fs-4"></i> Nginx</span>
           </div>
         </div>
       </div>
@@ -98,29 +98,6 @@
 <section id="projetos" class="py-5 mt-5">
   <div class="container">
     <h2 class="mb-5 fw-bold text-center fs-1 purple-text">Projetos</h2>
-
-    <div class="row align-items-center project-item mb-5 pb-5 border-bottom border-secondary">
-      <div class="col-md-6 text-center">
-        <img src="/calcopy.webp" alt="projeto-1-calcopy" loading="lazy" class="rounded-3 img-fluid project-img">
-      </div>
-
-      <div class="col-md-6">
-        <a href="https://github.com/mayyzenacs/CalcoPy_MarketCalc" target="_blank" class="link-proj">
-          <h5 class="mb-3 mt-4 mt-md-0 fs-1 link-proj">Calcopy Marketcalc</h5>
-        </a>
-        <p class="mb-4 text-white justify">Automação focada na estratégia comercial "De-Por" (exemplo: quando vemos um anúncio "De R$ 299,00 Por R$ 199,00" dizendo estar 35% de desconto).
-          A ferramenta realiza o cálculo da porcentagem inversa: você insere o preço final que deseja vender e a porcentagem de desconto. O algoritmo retorna exatamente qual deve ser o Preço Base ("De") que deve inserir no marketplace, que ao aplicar o desconto se torna no valor de venda final ("Por").</p>
-        <div class="d-flex flex-wrap gap-3 mb-4">
-          <span class="text-white p-2 tech-badge d-inline-flex align align-items-center"><i class="devicon-python-plain fs-3 me-2"></i> Python</span>
-          <span class="text-white p-2 tech-badge d-inline-flex align align-items-center"><i class="devicon-pandas-plain fs-3 me-2"></i> Pandas</span>
-          <span class="text-white p-2 tech-badge d-inline-flex align align-items-center"><i class="devicon-json-plain fs-3 me-2"></i> Json</span>
-          <span class="text-white p-2 tech-badge d-inline-flex align-items-center">
-            <i class="devicon-python-plain fs-3 me-2"></i> Tkinter
-          </span>
-
-        </div>
-      </div>
-    </div>
 
     <div class="row align-items-center project-item mb-5 pb-5 border-bottom border-secondary flex-md-row-reverse">
       <div class="col-md-6 text-center">
@@ -145,6 +122,29 @@
           <span class="text-white p-2 tech-badge d-inline-flex align-items-center">
             <i class="devicon-digitalocean-plain fs-3 me-2"></i> DigitalOcean
           </span>
+        </div>
+      </div>
+    </div>
+
+    <div class="row align-items-center project-item mb-5 pb-5 border-bottom border-secondary">
+      <div class="col-md-6 text-center">
+        <img src="/calcopy.webp" alt="projeto-1-calcopy" loading="lazy" class="rounded-3 img-fluid project-img">
+      </div>
+
+      <div class="col-md-6">
+        <a href="https://github.com/mayyzenacs/CalcoPy_MarketCalc" target="_blank" class="link-proj">
+          <h5 class="mb-3 mt-4 mt-md-0 fs-1 link-proj">Calcopy Marketcalc</h5>
+        </a>
+        <p class="mb-4 text-white justify">Automação focada na estratégia comercial "De-Por" (exemplo: quando vemos um anúncio "De R$ 299,00 Por R$ 199,00" dizendo estar 35% de desconto).
+          A ferramenta realiza o cálculo da porcentagem inversa: você insere o preço final que deseja vender e a porcentagem de desconto. O algoritmo retorna exatamente qual deve ser o Preço Base ("De") que deve inserir no marketplace, que ao aplicar o desconto se torna no valor de venda final ("Por").</p>
+        <div class="d-flex flex-wrap gap-3 mb-4">
+          <span class="text-white p-2 tech-badge d-inline-flex align align-items-center"><i class="devicon-python-plain fs-3 me-2"></i> Python</span>
+          <span class="text-white p-2 tech-badge d-inline-flex align align-items-center"><i class="devicon-pandas-plain fs-3 me-2"></i> Pandas</span>
+          <span class="text-white p-2 tech-badge d-inline-flex align align-items-center"><i class="devicon-json-plain fs-3 me-2"></i> Json</span>
+          <span class="text-white p-2 tech-badge d-inline-flex align-items-center">
+            <i class="devicon-python-plain fs-3 me-2"></i> Tkinter
+          </span>
+
         </div>
       </div>
     </div>
