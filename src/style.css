@@ -97,16 +97,18 @@ section {
   transition: 0.3s;
 }
 
-.sobre-foto {
+.about-img {
   max-width: 220px;
   object-fit: cover;
 
   border: 2px solid var(--cor-principal);
-  box-shadow: 0 0 10px rgba(138, 43, 226, 0.6), 0 0 20px rgba(138, 43, 226, 0.4),
+  box-shadow:
+    0 0 10px rgba(138, 43, 226, 0.6),
+    0 0 20px rgba(138, 43, 226, 0.4),
     0 0 30px rgba(138, 43, 226, 0.2);
 }
 
-.card-sobre {
+.card-about {
   background-color: #161616;
   border-left: 3px solid var(--cor-principal);
   border-radius: 20px;

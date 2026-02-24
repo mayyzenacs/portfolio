@@ -46,7 +46,7 @@
     <img src="/foto.webp" alt="foto-principal" class="rounded-circle mb-3 profile-img">
 
     <h1 class="display-4 fw-bold text-white">Mayra <span class="last-name">Pereira</span></h1>
-    <h2 class="h5 mb-2 fw-bold text-white">Desenvolvedora FullStack</h2>
+    <h2 class="h5 mb-2 fw-bold text-white">Desenvolvedora Backend</h2>
 
     <div class="fs-2 mb-5">
       <a href="https://github.com/mayyzenacs" target="_blank" class="me-3 hover-effect icons"><i class="bi bi-github"></i></a>
@@ -70,22 +70,22 @@
 
     <div class="row align-items-center gx-5">
       <div class="col-10 col-md-auto mx-auto mx-md-0 text-center mb-4 mb-md-0 hidden-left">
-        <img src="/about_img.webp" alt="foto-2-sobre" class="rounded-circle sobre-foto shadow-lg">
+        <img src="/about_img.webp" alt="foto-2-sobre" class="rounded-circle about-img shadow-lg">
       </div>
 
       <div class="col hidden-right">
-        <div class="card-sobre p-4 p-md-5 h-100">
-          <h1 class="fs-5 fw-bold mb-3 text-white">Engenheira de Software em formação • Backend focus</h1>
-          <p class="text-white justify"> Desenvolvo com foco em eficiência e otimização. Experiência na criação de soluções com Python e ecossistema Javascript (Node.js/Vite), uso de Docker para ambientes de desenvolvimento padronizados e portáveis. Entusiasta do conhecimento e de jogos de tabuleiro.
+        <div class="card-about p-4 p-md-5 h-100">
+          <h1 class="fs-5 fw-bold mb-3 text-white">• Engenheira de Software em formação</h1>
+          <p class="text-white justify"> Desenvolvedora Backend .NET e Infra. Crio aplicações robustas com Docker, Nginx e Postgres. Foco em performance, arquitetura de software e escalabilidade. Entusiasta do conhecimento e de jogos de tabuleiro.
           </p>
 
           <div class="mt-4 d-flex flex-wrap gap-3 text-secondary fw-bold align-items-center span-text">
-            <span><i class="devicon-python-plain fs-4" style="color:#306998;"></i> Python</span>
-            <span><i class="devicon-javascript-plain colored fs-4"></i> Javascript</span>
+            <span><i class="devicon-csharp-plain colored fs-4"></i> C#</span>
+            <span><i class="devicon-python-plain colored fs-4" style="color:#306998;"></i> Python</span>
+            <span><i class="devicon-nodejs-plain colored fs-4"></i> Nodejs</span>
             <span><i class="devicon-postgresql-plain colored fs-4"></i> Postgres</span>
-            <span><i class="devicon-nginx-plain-wordmark colored  fs-4"></i> Nginx</span>
-            <span><i class="devicon-flask-original fs-4" style="color: #fff;"></i> Flask</span>
             <span><i class="devicon-docker-plain-wordmark colored  fs-4"></i> Docker</span>
+            <span><i class="devicon-nginx-plain-wordmark colored  fs-4"></i> Nginx</span>
           </div>
         </div>
       </div>
@@ -99,7 +99,55 @@
   <div class="container">
     <h2 class="mb-5 fw-bold text-center fs-1 purple-text">Projetos</h2>
 
+    <div class="row align-items-center project-item mb-5 pb-5 border-bottom border-secondary flex-md-row-reverse">
+      <div class="col-md-6 text-center">
+        <img src="/portfolio.webp" alt="projeti-2-portfolio" loading="lazy" class="rounded-3 img-fluid project-img">
+      </div>
+
+      <div class="col-md-6">
+        <a href="https://github.com/mayyzenacs/portfolio" target="_blank" class="link-proj">
+          <h5 class="mb-3 mt-4 mt-md-0 fs-1 link-proj">Portfólio Pessoal</h5>
+        </a>
+        <p class="mb-4 text-white justify">Site One-Page focado em performance e otimização. Build com Vite,
+          containerizado via Docker Multi-Stage, servidor Nginx com security headers.
+          Deploy em VPS DigitalOcean com acesso SSH-only + Cloudflare com SSL Full Strict
+          e compressão Zstandard/Brotli.</p>
+        <div class="d-flex flex-wrap gap-3 mb-4">
+          <span class="text-white p-2 tech-badge d-inline-flex align align-items-center"><i class="devicon-nginx-plain fs-1 me-2"></i> Nginx</span>
+          <span class="text-white p-2 tech-badge d-inline-flex align align-items-center"><i class="devicon-vitejs-plain fs-3 me-2"></i> Vite</span>
+          <span class="text-white p-2 tech-badge d-inline-flex align-items-center">
+            <i class="devicon-docker-plain fs-3 me-2"></i> Docker
+          </span>
+          <span class="text-white p-2 tech-badge d-inline-flex align-items-center">
+            <i class="devicon-digitalocean-plain fs-3 me-2"></i> DigitalOcean
+          </span>
+          <span class="text-white p-2 tech-badge d-inline-flex align align-items-center"><i class="devicon-bootstrap-plain fs-3 me-2"></i> Bootstrap</span>
+        </div>
+      </div>
+    </div>
+
     <div class="row align-items-center project-item mb-5 pb-5 border-bottom border-secondary">
+      <div class="col-md-6 text-center">
+        <img src="/books.webp" alt="projeto-2-portfolio" loading="lazy" class="rounded-3 img-fluid project-img">
+      </div>
+
+      <div class="col-md-6">
+        <a href="https://github.com/ninahffbs/Skoob" target="_blank" class="link-proj">
+          <h5 class="mb-3 mt-4 mt-md-0 fs-1 link-proj">API Books</h5>
+        </a>
+        <p class="mb-4 text-white justify">API RESTful focada em arquitetura de alta performance inspirada no aplicativo Skoob (gerenciador de livros). O destaque do projeto foi a otimização de I/O: refatorado a geração de relatórios, substituindo a gravação lenta em disco por processamento em memória (Managed Heap), tornando a aplicação 100% Stateless e escalável em Docker. Cobertura de testes de 80% com NUnit e Moq.</p>
+        <div class="d-flex flex-wrap gap-3 mb-4">
+          <span class="text-white p-2 tech-badge d-inline-flex align align-items-center"><i class="devicon-csharp-plain fs-3 me-2"></i> Csharp</span>
+          <span class="text-white p-2 tech-badge d-inline-flex align align-items-center"><i class="devicon-dotnetcore-plain fs-3 me-2"></i> .NET10</span>
+          <span class="text-white p-2 tech-badge d-inline-flex align-items-center">
+            <i class="devicon-postgresql-plain fs-3 me-2"></i> Postgres
+          </span>
+          <span class="text-white p-2 tech-badge d-inline-flex align align-items-center"><i class="devicon-docker-plain fs-3 me-2"></i> Docker</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="row align-items-center project-item mb-5 pb-5 border-bottom border-secondary flex-md-row-reverse">
       <div class="col-md-6 text-center">
         <img src="/calcopy.webp" alt="projeto-1-calcopy" loading="lazy" class="rounded-3 img-fluid project-img">
       </div>
@@ -118,33 +166,6 @@
             <i class="devicon-python-plain fs-3 me-2"></i> Tkinter
           </span>
 
-        </div>
-      </div>
-    </div>
-
-    <div class="row align-items-center project-item mb-5 pb-5 border-bottom border-secondary flex-md-row-reverse">
-      <div class="col-md-6 text-center">
-        <img src="/projeto-2.webp" alt="projeti-2-portfolio" loading="lazy" class="rounded-3 img-fluid project-img">
-      </div>
-
-      <div class="col-md-6">
-        <a href="https://github.com/mayyzenacs/portfolio" target="_blank" class="link-proj">
-          <h5 class="mb-3 mt-4 mt-md-0 fs-1 link-proj">Portfólio Pessoal</h5>
-        </a>
-        <p class="mb-4 text-white justify">Site One-Page focado em performance e otimização. Build com Vite,
-          containerizado via Docker Multi-Stage, servidor Nginx com security headers.
-          Deploy em VPS DigitalOcean com acesso SSH-only + Cloudflare com SSL Full Strict
-          e compressão Zstandard/Brotli.</p>
-        <div class="d-flex flex-wrap gap-3 mb-4">
-          <span class="text-white p-2 tech-badge d-inline-flex align align-items-center"><i class="devicon-bootstrap-plain fs-3 me-2"></i> Bootstrap</span>
-          <span class="text-white p-2 tech-badge d-inline-flex align align-items-center"><i class="devicon-nginx-plain fs-1 me-2"></i> Nginx</span>
-          <span class="text-white p-2 tech-badge d-inline-flex align align-items-center"><i class="devicon-vitejs-plain fs-3 me-2"></i> Vite</span>
-          <span class="text-white p-2 tech-badge d-inline-flex align-items-center">
-            <i class="devicon-docker-plain fs-3 me-2"></i> Docker
-          </span>
-          <span class="text-white p-2 tech-badge d-inline-flex align-items-center">
-            <i class="devicon-digitalocean-plain fs-3 me-2"></i> DigitalOcean
-          </span>
         </div>
       </div>
     </div>
