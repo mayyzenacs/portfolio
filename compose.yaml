@@ -1,13 +1,8 @@
 services:
-  app:
-    container_name: my-portfolio
-
+  my-portfolio:
     image: ghcr.io/${GITHUB_REPOSITORY_LOWERCASE}/portfolio:latest
     restart: unless-stopped
 
-    ports:
-      - "80:80"
-      - "443:443"
     networks:
       - portfolio-network
     volumes:
@@ -46,6 +41,17 @@ services:
       options:
         max-size: "10m"
         max-file: "3"
+
+  cloudflared:
+    image: cloudflare/cloudflared:latest
+    command: tunnel --no-autoupdate run
+    environment:
+      - TUNNEL_TOKEN=${CLOUDFLARE_TUNNEL_TOKEN}
+    networks:
+      - portfolio-network
+    restart: unless-stopped
+    depends_on:
+      - my-portfolio
 
 networks:
   portfolio-network:
