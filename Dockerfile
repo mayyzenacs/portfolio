@@ -14,7 +14,7 @@ FROM nginx:1.29-alpine
 
 RUN mkdir -p /etc/nginx/snippets
 
-RUN rm -rf /etc/nginx/conf.d/*
+RUN rm -f /etc/nginx/conf.d/default.conf
 
 COPY snippets/security.conf /etc/nginx/snippets/security.conf
 
