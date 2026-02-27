@@ -1,25 +1,19 @@
 services:
-  app:
-    container_name: my-portfolio
-    build:
-      context: .
-      dockerfile: Dockerfile
+  my-portfolio:
+    image: ghcr.io/${GITHUB_REPOSITORY_LOWERCASE}/portfolio:latest
     restart: unless-stopped
-    ports:
-      - "80:80"
-      - "443:443"
 
+    networks:
+      - portfolio-network
     volumes:
       - /etc/ssl/cert.pem:/etc/ssl/cert.pem:ro
       - /etc/ssl/key.pem:/etc/ssl/key.pem:ro
-
 
     security_opt:
       - no-new-privileges:true
 
     cap_drop:
       - ALL
-
     cap_add:
       - CHOWN
       - SETUID
@@ -31,8 +25,8 @@ services:
     tmpfs:
       - /var/cache/nginx:mode=1777,size=10M
       - /var/run:mode=1777,size=512k
-      - /tmp:mode=1777
-      - /var/log/nginx:mode=1777
+      - /tmp:mode=1777,size=20M
+      - /var/log/nginx:mode=1777,size=20M
 
     healthcheck:
       test:
@@ -47,3 +41,18 @@ services:
       options:
         max-size: "10m"
         max-file: "3"
+
+  cloudflared:
+    image: cloudflare/cloudflared:latest
+    command: tunnel --no-autoupdate run
+    environment:
+      - TUNNEL_TOKEN=${CLOUDFLARE_TUNNEL_TOKEN}
+    networks:
+      - portfolio-network
+    restart: unless-stopped
+    depends_on:
+      - my-portfolio
+
+networks:
+  portfolio-network:
+    driver: bridge
