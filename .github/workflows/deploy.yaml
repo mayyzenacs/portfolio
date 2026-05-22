@@ -44,17 +44,28 @@ jobs:
           file: Dockerfile
           push: true
           tags: |
-            ghcr.io/mayyzenacs/portfolio:latest
-            ghcr.io/mayyzenacs/portfolio:${{ github.sha }}
+            ghcr.io/${{ env.REPO_LC }}:latest
+            ghcr.io/${{ env.REPO_LC }}:${{ github.sha }}
 
   deploy-to-vps:
     runs-on: ubuntu-latest
     needs: build-and-push
+    if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
     steps:
-      - name: Lowercase Repository Name
-        run: echo "REPO_LC=${GITHUB_REPOSITORY,,}" >> ${GITHUB_ENV}
+      - name: Checkout Code
+        uses: actions/checkout@v4
 
-      - name: Deploy via SSH
+      - name: Copy Infrastructure Files via SCP
+        uses: appleboy/scp-action@v1.0.6
+        with:
+          host: ${{ secrets.VPS_HOST }}
+          username: ${{ secrets.VPS_USER }}
+          key: ${{ secrets.VPS_SSH_KEY }}
+          source: "compose.yaml,nginx.conf,snippets/security.conf"
+          target: "/opt/portfolio/"
+          overwrite: true
+
+      - name: Execute Deploy via SSH
         uses: appleboy/ssh-action@v1.2.5
         env:
           TUNNEL_TOKEN: ${{ secrets.CLOUDFLARE_TUNNEL_TOKEN }}
@@ -62,16 +73,14 @@ jobs:
           host: ${{ secrets.VPS_HOST }}
           username: ${{ secrets.VPS_USER }}
           key: ${{ secrets.VPS_SSH_KEY }}
-          envs: REPO_LC, TUNNEL_TOKEN
+          envs: TUNNEL_TOKEN
           script: |
             set -e 
-
-            cd /opt/portfolio 
-            git pull origin master
+            cd /opt/portfolio
 
             echo "${{ secrets.GHCR_PAT }}" | docker login ghcr.io -u ${{ github.actor }} --password-stdin
             echo "CLOUDFLARE_TUNNEL_TOKEN=$TUNNEL_TOKEN" > .env
 
             sudo docker compose pull
             sudo docker compose up -d --force-recreate --remove-orphans
-            sudo docker image prune -a -f --filter "until=24h"
+            sudo docker image prune -f --filter "until=24h"
