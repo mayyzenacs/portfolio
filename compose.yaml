@@ -2,6 +2,12 @@ services:
   my-portfolio:
     image: ghcr.io/mayyzenacs/portfolio:latest
     restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - /etc/ssl/cert.pem:/etc/ssl/cert.pem:ro
+      - /etc/ssl/key.pem:/etc/ssl/key.pem:ro
     networks:
       - portfolio-network
 
