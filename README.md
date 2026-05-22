@@ -16,17 +16,17 @@ Este projeto migra a primeira versão com render e IaC para uma VPS Ubuntu confi
   
 O objetivo dessa migração de infraestrutura é demonstrar habilidades em Engenharia de Software e DevOps. O site one-page é focado em perfomance e segurança com Nginx configurado detalhadamente com secure headers. O uso de Docker faz com que a aplicação seja reprodutível e permite a hospedagem eficiente na VPS da DigitalOcean integrando com o CI/CD do Github Actions.
 
-## Stack Tecnológico
+## Stack
 
-- **Vite:** Build otimizado com _code splitting_ (`manualChunks`) e cache-busting via hash nos arquivos.
+- **Vite:** Build otimizado.
     
-- **Docker Multi-stage:** Separação de Build (Node) e Runtime (Nginx Alpine). Imagem final < 30MB, gerenciada via Compose com _healthcheck_.
+- **Docker Multi-stage:** Separação de Build (Node) e Runtime (Nginx Alpine). Imagem final super leve.
     
-- **Nginx Alpine:** Cache estático longo. Security headers ativos (HSTS, CSP, X-Frame-Options) e logs reduzidos (apenas erros 4xx/5xx).
+- **Nginx Alpine:** Security headers ativos (HSTS, CSP, X-Frame-Options) e logs reduzidos (apenas erros 4xx/5xx).
     
-- **VPS DigitalOcean (Ubuntu):** Swap ativo e acesso exclusivo via chave SSH. Firewall (UFW) configurado (80/443 fechadas). Acesso SSH only.
+- **VPS DigitalOcean (Ubuntu):** Swap ativo e acesso exclusivo via SSH only. Firewall (UFW) configurado. 
     
-- **Cloudflare:** Proxy ativo SSL Full Strict, Tunnels com cloudflared. Compressão Zstandard/Brotli. (68.23% de compressão)
+- **Cloudflare:** Proxy ativo SSL Full Strict.
   
 - **Github Actions:** Pipeline automatizado para Build, Push de imagem e Deploy remoto.
 
