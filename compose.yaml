@@ -1,56 +1,22 @@
 services:
-  my-portfolio:
-    image: ghcr.io/mayyzenacs/portfolio:latest
+  nginx:
+    image: nginx:1.31.0-alpine-slim
+    container_name: nginx_master
     restart: unless-stopped
     ports:
       - "80:80"
       - "443:443"
     volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./sites:/etc/nginx/sites:ro
+      - ./snippets:/etc/nginx/snippets:ro
       - /etc/ssl/cert.pem:/etc/ssl/cert.pem:ro
       - /etc/ssl/key.pem:/etc/ssl/key.pem:ro
+      - /opt/nginx/portfolio:/usr/share/nginx/html:ro
+      - ./logs:/var/log/nginx
     networks:
-      - portfolio-network
-
-    security_opt:
-      - no-new-privileges:true
-
-    cap_drop:
-      - ALL
-    cap_add:
-      - CHOWN
-      - SETUID
-      - SETGID
-      - NET_BIND_SERVICE
-
-    read_only: true
-
-    tmpfs:
-      - /var/cache/nginx:mode=1777,size=10M
-      - /var/run:mode=1777,size=512k
-      - /tmp:mode=1777,size=20M
-      - /var/log/nginx:mode=1777,size=5M
-
-    healthcheck:
-      test:
-        [
-          "CMD",
-          "wget",
-          "--quiet",
-          "--tries=1",
-          "--spider",
-          "http://localhost:80/",
-        ]
-      interval: 30s
-      timeout: 5s
-      retries: 3
-      start_period: 15s
-
-    logging:
-      driver: json-file
-      options:
-        max-size: "10m"
-        max-file: "3"
+      - main_network
 
 networks:
-  portfolio-network:
-    driver: bridge
+  main_network:
+    external: true
