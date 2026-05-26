@@ -28,13 +28,25 @@ jobs:
       - name: Build
         run: bun run build
 
-      - name: Deploy Files SCP
-        uses: appleboy/scp-action@v1.0.0
+      - name: Deploy Static Files
+        uses: appleboy/scp-action@v1.0.6
         with:
           host: ${{ secrets.VPS_HOST }}
-          username: ${{ secrets.VPS_USER }}
-          key: ${{ secrets.VPS_SSH_KEY }}
-          source: "dist/*,nginx.conf,snippets/security.conf"
-          target: "/opt/nginx-master/sites/portfolio/"
+          source: "dist/*"
+          target: "/opt/nginx/sites/portfolio/"
           strip_components: 1
-          overwrite: true
+
+      - name: Deploy Config
+        uses: appleboy/scp-action@v1.0.6
+        with:
+          host: ${{ secrets.VPS_HOST }}
+          source: "nginx.conf"
+          target: "/opt/nginx/sites_conf/"
+
+      - name: Deploy Snippets
+        uses: appleboy/scp-action@v1.0.6
+        with:
+          host: ${{ secrets.VPS_HOST }}
+          source: "snippets/csp_portfolio.conf"
+          target: "/opt/nginx/snippets/"
+          strip_components: 1
