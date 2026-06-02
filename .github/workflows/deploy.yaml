@@ -40,7 +40,7 @@ jobs:
         uses: appleboy/scp-action@v1.0.6
         with:
           host: ${{ secrets.VPS_HOST }}
-          source: "nginx.conf"
+          source: "portfolio.conf"
           target: "/opt/nginx/sites_conf/"
 
       - name: Deploy Snippets
