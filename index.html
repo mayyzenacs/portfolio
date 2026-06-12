@@ -43,7 +43,7 @@
 
   <div class="container">
 
-    <img src="/foto.webp" alt="foto-principal" class="rounded-circle mb-3 profile-img">
+    <img src="/foto.png" alt="foto-principal" class="rounded-circle mb-3 profile-img">
 
     <h1 class="display-4 fw-bold text-white">Mayra <span class="last-name">Pereira</span></h1>
     <h2 class="h5 mb-2 fw-bold text-white">Desenvolvedora Backend</h2>
@@ -99,6 +99,26 @@
 <section id="projetos" class="py-5 mt-5">
   <div class="container">
     <h2 class="mb-5 fw-bold text-center fs-1 purple-text">Projetos</h2>
+
+    <div class="row align-items-center project-item mb-5 pb-5 border-bottom border-secondary">
+      <div class="col-md-6 text-center">
+        <img src="/amigonaosecompra.webp" alt="projeto-2-portfolio" loading="lazy" class="rounded-3 img-fluid project-img">
+      </div>
+
+      <div class="col-md-6">
+        <a href="https://github.com/mayyzenacs/Amigo_Nao_Se_Compra" target="_blank" class="link-proj">
+          <h5 class="mb-3 mt-4 mt-md-0 fs-1 link-proj">Amigo Não Se Compra</h5>
+        </a>
+        <p class="mb-4 text-white justify">Plataforma de visibilidade para adoção de pets via busca de ONGs por localidade. Arquitetura otimizada para preservação de recursos de servidor, utilizando Minimal APIs em C# (.NET 10) com SQLite e uso de Migrations. Frontend em React (Typescript) e Tailwind CSS. Ambiente conteinerizado com Docker e Multi-Stage, onde o NGINX atua como proxy reverso e barreira de contenção (filtragem de bots e rate limiting). Proteção de borda via Cloudflare e pipeline de CI/CD automatizado via GitHub Actions.</p>
+        <div class="d-flex flex-wrap gap-3 mb-4">
+          <span class="text-white p-2 tech-badge d-inline-flex align align-items-center"><i class="devicon-csharp-plain fs-3 me-2"></i> Csharp</span>
+          <span class="text-white p-2 tech-badge d-inline-flex align align-items-center"><i class="devicon-dotnetcore-plain fs-3 me-2"></i> .NET10</span>
+          <span class="text-white p-2 tech-badge d-inline-flex align align-items-center"><i class="devicon-react-plain fs-1 me-2"></i> React</span>
+          <span class="text-white p-2 tech-badge d-inline-flex align-items-center"><i class="devicon-docker-plain fs-3 me-2"></i> Docker</span>
+          <span class="text-white p-2 tech-badge d-inline-flex align align-items-center"><i class="devicon-githubactions-plain fs-3 me-2"></i> Actions</span>
+        </div>
+      </div>
+    </div>
 
     <div class="row align-items-center project-item mb-5 pb-5 border-bottom border-secondary flex-md-row-reverse">
       <div class="col-md-6 text-center">
@@ -193,7 +213,7 @@
     <div class="mb-3">
       <h2 class="fw-bold mb-3 purple-text">Vamos Conversar?</h2>
       <p class="lead text-white mb-4">
-        Estou disponível para novos projetos e oportunidades.
+        Estou disponível para oportunidades e projetos.
       </p>
       <a href="https://www.linkedin.com/in/mayra-pereira-dev/" target="_blank" class="btn btn-outline-secondary px-3 py-2 mb-5 rounded-pill btn-roxo">
         <i></i> Contato</a>
