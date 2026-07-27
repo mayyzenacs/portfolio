@@ -28,7 +28,7 @@ O objetivo dessa migração é otimizar recursos na VPS implementando a infraest
 
 - **Vite:** Build otimizado.
 - **Nginx Alpine:** Security headers ativos (HSTS, CSP, X-Frame-Options) e logs reduzidos (apenas erros 4xx/5xx).
-- **VPS DigitalOcean (Ubuntu):** Swap ativo e acesso exclusivo via SSH only. Firewall (UFW) configurado.
+- **VPS Oracle (Ubuntu):** Acesso exclusivo via SSH only. Firewall configurado via iptables respeitando a compatibilidade estrita com a rede VCN(Virtual Private Cloud) da Oracle.
 - **Cloudflare:** Proxy ativo SSL Full Strict.
 - **Github Actions:** Automação completa do pipeline (CI/CD), compila o projeto com Bun e serve os arquivos via SCP(Secure Copy Protocol).
 
